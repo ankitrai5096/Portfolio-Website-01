@@ -1,0 +1,217 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* navigation Bar all Css Codes Here */
+
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 100px 0px 80px;
+}
+
+.navlist ul {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.navlist ul li {
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.navlist ul li a {
+    font-family: "Inter", sans-serif;
+    color: #000000;
+    opacity: 0.8;
+    text-decoration: none;
+    font-weight: medium;
+
+
+}
+
+.logo img {
+    width: 142px;
+    height: 55px;
+}
+
+
+
+/* Main hero section css codes here */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 150px 100px 100px 100px;
+    gap: 100px;
+
+}
+.home-main {
+    display: flex;
+  
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.profile-know-more {
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 5px;
+    margin-right: 50px;
+   
+}
+
+.profile-know-more p{
+    padding: 5px 8px 5px 8px;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    background: linear-gradient(90deg, #00C9FF, #92FE9D, #e6d027, #FFAA85, #FF0084);
+    -webkit-background-clip: text;
+    color: transparent;
+  
+}
+
+
+.profile-deatisl {
+    width: 400px;
+}
+
+.profile-deatisl h1{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+
+.Introduction{
+
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: space-around;
+    align-items: left;
+    margin: 150px 100px 100px 100px;
+
+}
+
+.intro {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.intro span{
+  color: #00A86B;
+}
+
+.know-more {
+    margin-left: 20px;
+}
+
+
+/* card section css code ehere */
+
+.portfolio-projects {
+    margin-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.section-title .highlight {
+    color: #ff6347; /* Tomato color for emphasis */
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: calc(33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+}
+
+.project-info {
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.project-info h3 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+}
+
+.project-info p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(50% - 20px);
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%;
+    }
+    
+   
+}
