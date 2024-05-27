@@ -52,13 +52,15 @@
     display: flex;
     flex-direction: column;
     justify-content: right;
-    margin: 150px 100px 100px 100px;
+    margin: 150px 50px 100px 50px;
     gap: 100px;
 
 }
+
 .home-main {
     display: flex;
-  
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
     justify-content: space-around;
     align-items: center;
 
@@ -71,10 +73,10 @@
     justify-content: right;
     gap: 5px;
     margin-right: 50px;
-   
+
 }
 
-.profile-know-more p{
+.profile-know-more p {
     padding: 5px 8px 5px 8px;
     border-color: #000000;
     border-style: solid;
@@ -86,30 +88,39 @@
     background: linear-gradient(90deg, #00C9FF, #92FE9D, #e6d027, #FFAA85, #FF0084);
     -webkit-background-clip: text;
     color: transparent;
-  
+
 }
 
+.profile{
+    padding: 20px 0px 20px 0px;
+}
 
 .profile-deatisl {
     width: 400px;
 }
 
-.profile-deatisl h1{
+.profile-deatisl h1 {
     font-family: "Luckiest Guy", cursive;
     font-weight: 400;
     font-size: 36px;
 }
 
 
-.Introduction{
+.Introduction {
 
     display: flex;
     flex-direction: column;
-   
+
     justify-content: space-around;
     align-items: left;
-    margin: 150px 100px 100px 100px;
+    margin: 150px 100px 150px 100px;
 
+}
+.intro-whole{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
 }
 
 .intro {
@@ -119,8 +130,8 @@
     margin-left: 20px;
 }
 
-.intro span{
-  color: #00A86B;
+.intro span {
+    color: #00A86B;
 }
 
 .know-more {
@@ -140,6 +151,12 @@
     flex-direction: column;
 }
 
+.section-para {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5em;
+    opacity: 0.6;
+}
+
 
 .section-title {
     font-family: 'Luckiest Guy', cursive;
@@ -149,7 +166,8 @@
 }
 
 .section-title .highlight {
-    color: #ff6347; /* Tomato color for emphasis */
+    color: #ff6347;
+    /* Tomato color for emphasis */
 }
 
 .projects {
@@ -160,28 +178,33 @@
 }
 
 .project-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fffefe;
+    border-radius: 4px;
+    box-shadow: 10px 10px 10px  #d9d9d995;
     overflow: hidden;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease-in;
     width: calc(33% - 20px);
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.project-card:hover {
-    transform: scale(1.05);
+
+.project-card:hover{
+    transform: scale(1.035);
 }
 
 .project-image {
     object-fit: cover;
-    width: 400px;
-    height: 300px;
+    width: 380px;
+    height: 280px;
 }
+.project-image:hover{
+    transform: scale(1.035);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
 
+}
 .project-info {
     padding: 10px;
     text-align: left;
@@ -204,14 +227,80 @@
     .project-card {
         width: calc(50% - 20px);
     }
+
+    .profile-deatisl {
+        text-align: center;
+    }
     
+
+    .profile-know-more {
+        justify-content: center;
+    }
+
+    .intro{
+        text-align: center;
+        margin: 5px;
+    }
+
+    .intro-whole{
+  
+        margin: 5px;
+    }
+
+    .home-main{
+        justify-content: center;
+    }
+
+    .Introduction{
+        margin: 50px 50px 80px 50px;
     
+    }
+
+    .intro-whole{
+        align-items: center;
+    }
+    .navlist {
+        display: none;
+    }
+.profile img {
+    width: 250px;
+}
+
+.Navbar {
+    justify-content: center;
+}
+
 }
 
 @media (max-width: 480px) {
     .project-card {
         width: 100%;
     }
+
+    .profile-deatisl {
+        text-align: center;
+    }
     
-   
+
+    .profile-know-more {
+        justify-content: center;
+    }
+
+    .intro{
+        text-align: center;
+    }
+    .home-main{
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .Introduction{
+        margin: 50px 10px 80px 10px;
+    
+    }
+    .profile img {
+        width: 200px;
+    }
+
+
 }
