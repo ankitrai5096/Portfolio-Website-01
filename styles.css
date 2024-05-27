@@ -52,7 +52,7 @@
     display: flex;
     flex-direction: column;
     justify-content: right;
-    margin: 150px 50px 100px 50px;
+    margin: 100px 50px 100px 50px;
     gap: 100px;
 
 }
@@ -266,9 +266,17 @@
     width: 250px;
 }
 
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
 .Navbar {
     justify-content: center;
+    margin-top: 100px;
 }
+
+
 
 }
 
