@@ -271,9 +271,13 @@
     height: auto;
 }
 
+#home {
+    margin: 50px 50px 100px 50px;
+}
+
 .Navbar {
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 
