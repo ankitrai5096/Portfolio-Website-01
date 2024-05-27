@@ -72,7 +72,6 @@
     align-items: center;
     justify-content: right;
     gap: 5px;
-    margin-right: 50px;
 
 }
 
@@ -272,12 +271,12 @@
 }
 
 #home {
-    margin: 10px 50px 100px 50px;
+    margin: 20px 50px 100px 50px;
 }
 
 .Navbar {
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 
