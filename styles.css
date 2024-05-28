@@ -2,6 +2,9 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -297,6 +300,7 @@
     padding: 20px;
     max-width: 1200px;
     overflow-y: auto; 
+    scroll-behavior: smooth;
 }
 
 .skill-topic {
@@ -313,6 +317,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
+    width: 100%;
 }
 
 .skill-box {
@@ -324,10 +329,10 @@
     height: 50px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
     position: relative;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -337,17 +342,17 @@
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(69, 224, 131, 0.468);
     cursor: none;
-
 }
 
 .skill-box img {
     width: 30px;
-height: 30px;
+    height: 30px;
 }
 
 .skill-box p {
     font-size: 100%;
 }
+
 
 
 
@@ -537,6 +542,7 @@ height: 30px;
     .skill-section {
         padding: 10px;
         justify-content: center;
+        scroll-behavior: smooth;
     }
 
     .skill-topic {
