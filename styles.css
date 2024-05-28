@@ -1,6 +1,7 @@
 * {
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
 
 
@@ -77,17 +78,17 @@
 
 .profile-know-more p {
     display: inline-block;
-            padding: 5px 8px;
-            font-size: 20px;
-            font-family: "Inter", sans-serif;
-            font-weight: 500;
-            background: linear-gradient(90deg, #00C9FF, #92FE9D, #e6d027, #FFAA85, #FF0084);
-            -webkit-background-clip: text;
-            color: transparent;
-           
-       
-            position: relative;
-            overflow: hidden;
+    padding: 5px 8px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    background: linear-gradient(90deg, #00C9FF, #92FE9D, #e6d027, #FFAA85, #FF0084);
+    -webkit-background-clip: text;
+    color: transparent;
+
+
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -109,15 +110,19 @@
     0% {
         clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%);
     }
+
     25% {
         clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 100% 0%);
     }
+
     50% {
         clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 100%);
     }
+
     75% {
         clip-path: polygon(100% 0%, 0% 100%, 100% 100%, 100% 0%);
     }
+
     100% {
         clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%);
     }
@@ -128,7 +133,7 @@
 }
 
 
-.profile{
+.profile {
     padding: 20px 0px 20px 0px;
 }
 
@@ -153,7 +158,8 @@
     margin: 150px 100px 150px 100px;
 
 }
-.intro-whole{
+
+.intro-whole {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -167,7 +173,7 @@
     margin-left: 20px;
 }
 
-.child{
+.child {
     color: #00A86B;
 }
 
@@ -217,7 +223,7 @@
 .project-card {
     background-color: #fffefe;
     border-radius: 4px;
-    box-shadow: 10px 10px 10px  #d9d9d995;
+    box-shadow: 10px 10px 10px #d9d9d995;
     overflow: hidden;
     transition: transform 0.2s ease-in;
     width: calc(33% - 20px);
@@ -227,7 +233,7 @@
 }
 
 
-.project-card:hover{
+.project-card:hover {
     transform: scale(1.035);
 }
 
@@ -236,12 +242,14 @@
     width: 380px;
     height: 280px;
 }
-.project-image:hover{
+
+.project-image:hover {
     transform: scale(1.035);
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
 
 }
+
 .project-info {
     padding: 10px;
     text-align: left;
@@ -260,6 +268,112 @@
     margin: 5px 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skill-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+
+    margin: 100px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.skill-topic {
+    margin-bottom: 20px;
+    color: #333;
+    display: inline-block;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5em;
+
+}
+
+.skills-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(69, 224, 131, 0.468);
+    cursor: none;
+
+}
+
+.skill-box img {
+    width: 30px;
+
+}
+
+.skill-box p {
+    font-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .project-card {
         width: calc(50% - 20px);
@@ -268,59 +382,104 @@
     .profile-deatisl {
         text-align: center;
     }
-    
+
 
     .profile-know-more {
         justify-content: center;
     }
 
-    .intro{
+    .intro {
         text-align: center;
         margin: 5px;
     }
 
-    .intro-whole{
-  
+    .intro-whole {
+
         margin: 5px;
     }
 
-    .home-main{
+    .home-main {
         justify-content: center;
     }
 
-    .Introduction{
+    .Introduction {
         margin: 50px 50px 80px 50px;
-    
+
     }
 
-    .intro-whole{
+    .intro-whole {
         align-items: center;
     }
+
     .navlist {
         display: none;
     }
-.profile img {
-    width: 250px;
-}
 
-.logo img {
-    width: 100px;
-    height: auto;
-}
+    .profile img {
+        width: 250px;
+    }
 
-#home {
-    margin: 20px 50px 100px 50px;
-}
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
 
-.Navbar {
-    justify-content: center;
-    margin-top: 20px;
-}
+    #home {
+        margin: 20px 50px 100px 50px;
+    }
 
-.less-text {
-    display: none;
-}
+    .Navbar {
+        justify-content: center;
+        margin-top: 20px;
+    }
 
+    .less-text {
+        display: none;
+    }
+
+    .skill-item {
+        flex: 1 1 calc(33.333% - 40px);
+        /* Change to 3 items per row */
+        max-width: calc(33.333% - 40px);
+    }
+
+
+
+
+
+
+    .skill-box img {
+        width: 20px;
+    }
+    .skill-box p {
+        font-size: 90%;
+    }
+
+
+
+
+
+
+
+
+    .skill-section {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .skill-topic {
+        font-size: 2 rem;
+    }
+
+    .skills-data {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .skill-box {
+        width: 120px;
+        height: 45px;
+    }
 
 
 }
@@ -333,27 +492,63 @@
     .profile-deatisl {
         text-align: center;
     }
-    
+
 
     .profile-know-more {
         justify-content: center;
     }
 
-    .intro{
+    .intro {
         text-align: center;
     }
-    .home-main{
+
+    .home-main {
         justify-content: center;
         gap: 50px;
     }
 
-    .Introduction{
+    .Introduction {
         margin: 50px 10px 80px 10px;
-    
+
     }
+
     .profile img {
         width: 200px;
     }
 
+    .skill-item {
+        flex: 1 1 calc(50% - 40px);
+        /* Change to 2 items per row */
+        max-width: calc(50% - 40px);
+    }
+
+
+    .skill-box img {
+        width: 18px;
+    }
+
+    .skill-box p {
+        font-size: 80%;
+    }
+
+
+    .skill-section {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .skill-topic {
+        font-size: 1.8rem;
+    }
+
+    .skills-data {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .skill-box {
+        width: 100px;
+        height: 40px;
+    }
 
 }
