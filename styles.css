@@ -104,7 +104,7 @@
     border: 2px solid #000000;
     border-radius: 15px;
     box-sizing: border-box;
-    animation: border-rotate 2s linear infinite;
+    animation: border-rotate 2s ease-in infinite;
     pointer-events: none;
 }
 
@@ -236,8 +236,8 @@
 
 .project-card {
     background-color: #fffefe;
-    border-radius: 4px;
-    box-shadow: 10px 10px 10px #d9d9d995;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.2s ease-in;
     width: calc(33% - 20px);
@@ -382,6 +382,117 @@
 
 
 
+.image-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.art-flex{
+    object-fit: contain;
+}
+
+.box img{
+    object-fit: cover;
+}
+.art-flex img{
+    width: 1160px;
+    border-radius: 5px;
+    height: 300px;
+    object-fit: cover;
+}
+.img-layout {
+    position: relative;
+    margin-top: 100px;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+justify-content: left;
+display: flex;
+flex-direction: column;
+overflow: visible;
+
+    
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+   
+}
+
+.image-grid .box {
+    position: relative;
+    
+  
+}
+
+.image-grid .box img {
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+}
+
+
+.popup-box {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+    z-index: 10;
+
+}
+
+.popup-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+#popupInfo {
+    margin-top: 10px;
+}
+.popup-box.show {
+    border-radius: 5px;
+    width: 500px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 5;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
 
 
 
@@ -464,6 +575,9 @@
 
 
 
+
+
+
     .skill-box img {
         width: 20px;
     }
@@ -497,6 +611,7 @@
         height: 45px;
     }
 
+    
 
 }
 
@@ -568,4 +683,5 @@
         height: 40px;
     }
 
+  
 }
