@@ -491,7 +491,7 @@
     align-items: center; /* Center items horizontally */
     max-width: 100%; /* Maximum width of the entire section */
     padding: 50px 20px 10px 20px; /* Padding around the section */
-    background: linear-gradient(-70deg, #f0f0f0, #f0f0f0, #79c98a, #f0f0f0);
+    background: linear-gradient(-70deg, #f0f0f0, #f0f0f0, #8ebf99, #f0f0f0);
 	background-size: 400% 400%;
 	animation: gradient 4s linear infinite;
 	height: 110vh;
