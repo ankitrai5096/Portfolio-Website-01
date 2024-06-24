@@ -485,11 +485,17 @@
 
 
 .experience-section {
+  
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     max-width: 100%; /* Maximum width of the entire section */
-    padding: 20px; /* Padding around the section */
+    padding: 50px 20px 10px 20px; /* Padding around the section */
+    background: linear-gradient(-70deg, #f0f0f0, #65b9d8, #23a6d5, #f0f0f0);
+	background-size: 400% 400%;
+	animation: gradient 4s ease infinite;
+	height: 100vh;
+   
 }
 
 .experience-header {
@@ -575,6 +581,18 @@
 
 
 
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 
 
@@ -700,21 +718,17 @@
 
 
 
-    .experience-para {
-        font-size: 1.2em;
-    }
-    .experience-title {
-        font-size: 2em;
-    }
+   
     .experience-box {
         padding: 15px;
     }
     .exp-description-ul {
         margin-left: 15px;
+        font-size: 70%;
     }
     
 
-    
+  
 
   
 }
@@ -788,20 +802,13 @@
     }
 
 
-
-
-    .experience-para {
-        font-size: 1em;
-    }
-    .experience-title {
-        font-size: 1.5em;
-    }
     .experience-box {
-        padding: 10px;
+        padding: 15px;
     }
     .exp-description-ul {
-        margin-left: 10px;
+        margin-left: 15px;
+        font-size: 50%;
     }
 
-  
+   
 }
