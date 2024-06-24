@@ -726,9 +726,10 @@
         margin-left: 15px;
         font-size: 70%;
     }
-    
+    .experience-box-tile p {
+        font-size: 70%;
 
-  
+    }
 
   
 }
@@ -807,7 +808,7 @@
     }
     .exp-description-ul {
         margin-left: 15px;
-        font-size: 50%;
+        font-size: 70%;
     }
 
    
