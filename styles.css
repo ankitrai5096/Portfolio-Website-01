@@ -483,6 +483,109 @@
 
 
 
+
+.experience-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    max-width: 100%; /* Maximum width of the entire section */
+    padding: 20px; /* Padding around the section */
+}
+
+.experience-header {
+    width: 100%; /* Full width by default */
+    max-width: 1200px;
+    align-items: center; /* Align header content to the left */
+    margin-bottom: 20px; /* Space between header and boxes */
+}
+
+.experience-header-content {
+    max-width: 1200px; /* Limit width of header content */
+}
+
+.experience-para {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5em;
+    opacity: 0.6;
+}
+
+.experience-title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.highlight {
+    color: #ff6347;
+}
+
+.experience-box {
+    width: 100%; /* Full width by default */
+    max-width: 1200px; /* Maximum width of 1200px */
+    height: auto; /* Let the height adjust automatically */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for glass effect */
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box; /* Include padding and border in the box's total width */
+    margin-bottom: 20px; /* Space between boxes */
+}
+
+.experience-box:hover {
+    transform: translateY(-5px); /* Lift the box on hover */
+}
+
+.experience-box-tile {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.experience-box-tile h3 {
+    font-family: "Inter", sans-serif;
+    color: #000000;
+    font-weight: 800;
+}
+
+.experience-box-tile p {
+    color: #000000;
+    opacity: 0.5;
+}
+
+.Company {
+    font-family: "Inter", sans-serif;
+    color: #000000;
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+.exp-description-ul {
+    margin-top: 5px;
+    margin-left: 25px;
+    opacity: 0.5;
+}
+
+.child-des {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .project-card {
         width: calc(50% - 20px);
@@ -593,8 +696,27 @@
         height: 45px;
     }
 
+
+
+
+
+    .experience-para {
+        font-size: 1.2em;
+    }
+    .experience-title {
+        font-size: 2em;
+    }
+    .experience-box {
+        padding: 15px;
+    }
+    .exp-description-ul {
+        margin-left: 15px;
+    }
     
 
+    
+
+  
 }
 
 @media (max-width: 480px) {
@@ -663,6 +785,22 @@
     .skill-box {
         width: 100px;
         height: 40px;
+    }
+
+
+
+
+    .experience-para {
+        font-size: 1em;
+    }
+    .experience-title {
+        font-size: 1.5em;
+    }
+    .experience-box {
+        padding: 10px;
+    }
+    .exp-description-ul {
+        margin-left: 10px;
     }
 
   
