@@ -3,9 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const popupBox = document.getElementById('popupBox');
     const popupImage = document.getElementById('popupImage');
     const popupInfo = document.getElementById('popupInfo');
-    const overlay = document.createElement('div');
-    overlay.className = 'overlay';
-    document.body.appendChild(overlay);
+    const overlay = document.querySelector('.overlay');
     
     let timeout;
 
@@ -35,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
             clearTimeout(timeout);
             timeout = setTimeout(hidePopup, 200);
         });
+    });
 
-        overlay.addEventListener('mouseenter', function() {
-            clearTimeout(timeout);
-            hidePopup();
-        });
+    overlay.addEventListener('mouseenter', function() {
+        clearTimeout(timeout);
+        hidePopup();
     });
 });

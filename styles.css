@@ -406,28 +406,23 @@
 .img-layout {
     position: relative;
     margin-top: 100px;
-max-width: 1200px;
-margin: 0 auto;
-padding: 20px;
-justify-content: left;
-display: flex;
-flex-direction: column;
-overflow: visible;
-
-    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
 }
 
 .image-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-   
 }
 
 .image-grid .box {
     position: relative;
-    
-  
 }
 
 .image-grid .box img {
@@ -436,11 +431,10 @@ overflow: visible;
     border-radius: 3px;
 }
 
-
 .popup-box {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background: white;
     border: 1px solid #ccc;
@@ -448,9 +442,8 @@ overflow: visible;
     text-align: center;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
-    z-index: 10;
-
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 .popup-box img {
@@ -461,6 +454,7 @@ overflow: visible;
 #popupInfo {
     margin-top: 10px;
 }
+
 .popup-box.show {
     border-radius: 5px;
     width: 500px;
@@ -475,29 +469,17 @@ overflow: visible;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
     backdrop-filter: blur(5px);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    z-index: 5;
+    z-index: 500;
 }
 
 .overlay.show {
     opacity: 1;
     visibility: visible;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
