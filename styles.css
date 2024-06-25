@@ -300,8 +300,14 @@
 
 .project-info p {
     font-size: 1em;
-    color: #555;
+    color: #555555;
     margin: 5px 0;
+}
+
+.project-info p a{
+  
+    color: #3e13d7;
+   
 }
 
 
