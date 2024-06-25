@@ -56,7 +56,7 @@
     flex-direction: column;
     justify-content: right;
     margin: 100px 50px 100px 50px;
-    gap: 100px;
+    gap: 70px;
 
 }
 
@@ -73,8 +73,12 @@
 
     display: flex;
     align-items: center;
-    justify-content: right;
-    gap: 5px;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
 
 }
 
@@ -134,7 +138,23 @@
     animation-play-state: running;
 }
 
+.profile-know-more-resume{
+    display: inline-block;
+}
+.profile-know-more a button{
+    padding: 10px;
+    background-color: rgb(80, 80, 242);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    
+   
+    transition: transform 0.3s, box-shadow 0.3s;
 
+   
+}
 .profile {
     padding: 20px 0px 20px 0px;
     
@@ -307,8 +327,8 @@
     padding: 20px;
     text-align: center;
 
-    margin: 100px auto;
-    padding: 20px;
+    margin: 80px auto;
+
     max-width: 1200px;
     overflow-y: auto; 
     scroll-behavior: smooth;
@@ -404,23 +424,13 @@
     height: 300px;
     object-fit: cover;
 }
-.img-layout {
-    position: relative;
-    margin-top: 100px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    justify-content: left;
-    display: flex;
-    flex-direction: column;
-    overflow: visible;
-}
 
 .image-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
+
 
 .image-grid .box {
     position: relative;
@@ -491,8 +501,9 @@
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     max-width: 100%; /* Maximum width of the entire section */
-    padding: 50px 20px 10px 20px; /* Padding around the section */
+    padding: 20px 25px 20px 25px; /* Padding around the section */
 	height: 110vh;
+    margin-left: auto;
    
 }
 
@@ -635,6 +646,11 @@ footer {
     border-radius: 10px;
   }
   
+  .Image-grid:hover {
+   
+    transform: translateY(10px);
+    transition-duration: 300ms;
+}
   .Image-column {
    
     flex: 20%;
@@ -805,8 +821,8 @@ footer {
 
 
     .skill-section {
-        padding: 15px;
-        justify-content: center;
+        padding: 20px;
+       
     }
 
     .skill-topic {
@@ -898,8 +914,8 @@ footer {
 
 
     .skill-section {
-        padding: 10px;
-        justify-content: center;
+        padding: 20px;
+       
         scroll-behavior: smooth;
     }
 
@@ -908,7 +924,7 @@ footer {
     }
 
     .skills-data {
-        justify-content: center;
+      
         gap: 10px;
     }
 
