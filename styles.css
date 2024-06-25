@@ -516,7 +516,7 @@
 .experience-title {
     font-family: 'Luckiest Guy', cursive;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: inline-block;
 }
 
@@ -620,6 +620,76 @@ footer {
     color: white;
     padding: 0 5px;
 }
+
+
+
+.Image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .Image-column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 5px 8px;
+  }
+  
+  .Image-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  @media (max-width: 1200px) {
+    .Image-column {
+      flex: 40%;
+      flex-wrap: wrap;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .Image-column {
+      flex: 50%;
+      max-width: 100%;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -757,11 +827,17 @@ footer {
     }
     .exp-description-ul {
         margin-left: 15px;
-        font-size: 70%;
+        font-size: 60%;
     }
     .experience-box-tile p {
-        font-size: 70%;
+        font-size: 60%;
 
+    }
+    .experience-title {
+       
+        font-size: 2em;
+        margin-bottom: 10px;
+       
     }
 
   
@@ -841,8 +917,14 @@ footer {
     }
     .exp-description-ul {
         margin-left: 15px;
-        font-size: 70%;
-    }
+       
+        .experience-title {
+       
+            font-size: 1.8em;
+            margin-bottom: 7px;
+           
+        }
+    
 
-   
+    }
 }
